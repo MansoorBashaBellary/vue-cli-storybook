@@ -1,1 +1,9 @@
-# vue-cli-storybook
+### Installation
+
+```
+$ yarn
+```
+
+```
+$ yarn start
+```
