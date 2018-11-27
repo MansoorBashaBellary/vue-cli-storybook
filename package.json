@@ -19,6 +19,7 @@
     "@storybook/addon-viewport": "4.1.0-alpha.8",
     "@storybook/addons": "4.1.0-alpha.8",
     "@storybook/components": "4.1.0-alpha.8",
+    "@storybook/ui": "4.1.0-alpha.8",
     "@storybook/vue": "4.1.0-alpha.8",
     "@vue/cli-service": "^3.0.5",
     "babel-loader": "^8.0.4",
