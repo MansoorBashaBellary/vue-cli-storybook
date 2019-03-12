@@ -5,7 +5,7 @@
   "author": "Mansoor Basha Bellary <mbellary@chewy.com>",
   "license": "MIT",
   "scripts": {
-    "start": "vue-cli-service serve:storybook -p 6006 -c .storybook"
+    "start": "vue-cli-service storybook:serve -p 6006 -c .storybook"
   },
   "repository": {
     "type": "git",
@@ -15,15 +15,13 @@
     "vue": "^2.4.4"
   },
   "devDependencies": {
-    "@storybook/addon-options": "4.1.0-alpha.8",
-    "@storybook/addon-viewport": "4.1.0-alpha.8",
-    "@storybook/addons": "4.1.0-alpha.8",
-    "@storybook/components": "4.1.0-alpha.8",
-    "@storybook/ui": "4.1.0-alpha.8",
-    "@storybook/vue": "4.1.0-alpha.8",
-    "@vue/cli-service": "^3.0.5",
+    "@babel/core": "^7.0.0",
+    "@storybook/addons": "5.0.1",
+    "@storybook/addon-knobs": "5.0.1",
+    "@storybook/vue": "5.0.1",
+    "@vue/cli-service": "3.5.1",
     "babel-loader": "^8.0.4",
-    "vue-cli-plugin-storybook": "^0.4.8",
+    "vue-cli-plugin-storybook": "0.6.0",
     "vue-template-compiler": "^2.5.13"
   }
 }
