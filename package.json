@@ -12,16 +12,28 @@
     "url": "git+https://github.com/MansoorBashaBellary/vue-cli-storybook.git"
   },
   "dependencies": {
-    "vue": "^2.4.4"
+    "vue": "^2.5.17"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "@storybook/addons": "5.0.1",
-    "@storybook/addon-knobs": "5.0.1",
-    "@storybook/vue": "5.0.1",
-    "@vue/cli-service": "3.5.1",
+    "@storybook/addon-a11y": "5.0.10",
+    "@storybook/addon-knobs": "5.0.10",
+    "@storybook/addon-storysource": "5.0.10",
+    "@storybook/addon-viewport": "5.0.10",
+    "@storybook/addons": "5.0.10",
+    "@storybook/theming": "5.0.10",
+    "@storybook/vue": "5.0.10",
+    "@vue/cli-service": "^3.0.5",
     "babel-loader": "^8.0.4",
-    "vue-cli-plugin-storybook": "0.6.0",
-    "vue-template-compiler": "^2.5.13"
+    "raw-loader": "^0.5.1",
+    "storybook-readme": "5.0.2",
+    "markdown-loader": "5.0.0",
+    "vue-cli-plugin-storybook": "0.6.1",
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "peerDependencies": {
+    "include-media": "1.x",
+    "vue": "^2.5.17"
   }
 }

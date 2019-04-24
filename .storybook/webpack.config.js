@@ -1,17 +1,22 @@
-const webpack = require('webpack');
+const path = require('path');
 
-module.exports = ({config}) => {
-  const plugins = config.plugins;
+module.exports = ({ config }) => {
+  config.module.rules.push({
+    test: [/\.md$/],
+    loaders: ['raw-loader'],
+    include: [path.resolve(__dirname, '../')]
+  });
 
-  // plugins.push(
-  //   new webpack.EnvironmentPlugin({
-  //     COSMOS_DISABLE_RESETS: true
-  //   })
-  // )
-  const newConfig = { ...config };
+  config.module.rules.push({
+    test: [/\.md$/],
+    loaders: ['markdown-loader'],
+    include: [
+      path.resolve(__dirname, '../changelog.md'),
+      path.resolve(__dirname, '../CONTRIBUTING.md')
+    ]
+  });
 
-  // Export bundles as libraries so we can access them on page scope.
-  newConfig.output.library = '[name]';
+  config.resolve.alias['storybook'] = path.resolve(__dirname, '.');
 
-  return newConfig;
-}
+  return config;
+};

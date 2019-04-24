@@ -1,21 +1,18 @@
 import { storiesOf } from '@storybook/vue';
-import { withKnobs, select, text } from '@storybook/addon-knobs';
-import Button1 from './Button.vue';
+import Button from './Button.vue';
 
-storiesOf('Button1', module)
-  .addDecorator(
-    withKnobs({
-      escapeHTML: false
-    })
-  )
+storiesOf('Button', module)
   .add('with some emoji', () => ({
     components: {
-      Button1
+      Button
     },
-    data() {
-      return {
-        title: text('heading', 'Heading')
-      }
+    template: `<Button />`
+  }));
+
+storiesOf('Button', module)
+  .add('with some emoji1111', () => ({
+    components: {
+      Button
     },
-    template: `<Button1 :title="title" />`
+    template: `<Button />`
   }));
